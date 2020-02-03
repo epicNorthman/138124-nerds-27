@@ -23,44 +23,44 @@
   </header>
   <h1>Магазин готовых шаблонов</h1>
   <main>
-    <h2>Фильтр шаблонов</h2>
-    <form method="get">
-      <fieldset>
-        <ul>
+    <section>
+      <h2>Фильтр шаблонов</h2>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
           <legend>Сетка:</legend>
+          <ul>
+            <li><input type="radio" name="grid" id="adaptive" value="grid_adaptive" checked>
+              <label for="adaptive">Адаптивная</label></li>
 
-          <li><input type="radio" name="grid" id="adaptive" value="grid_adaptive" checked>
-            <label for="adaptive">Адаптивная</label></li>
+            <li><input type="radio" name="grid" id="fluid" value="grid_fluid">
+              <label for="fluid">Фиксированная</label></li>
 
-          <li><input type="radio" name="grid" id="fluid" value="grid_fluid">
-            <label for="fluid">Фиксированная</label></li>
-
-          <li><input type="radio" name="grid" id="fix" value="grid_fix">
-            <label for="fix">Разиновая</label></li>
-        </ul>
-      </fieldset>
-      <fieldset>
-        <ul>
+            <li><input type="radio" name="grid" id="fix" value="grid_fix">
+              <label for="fix">Разиновая</label></li>
+          </ul>
+        </fieldset>
+        <fieldset>
           <legend>Особенности:</legend>
+          <ul>
+            <li><input type="checkbox" name="features" id="slider" value="slider" checked>
+              <label for="slider">Слайдер</label></li>
 
-          <li><input type="checkbox" name="features" id="slider" value="slider" checked>
-            <label for="slider">Слайдер</label></li>
+            <li><input type="checkbox" name="features" id="advantages" value="advantages">
+              <label for="advantages">Блок преимущества</label></li>
 
-          <li><input type="checkbox" name="features" id="advantages" value="advantages">
-            <label for="advantages">Блок преимущества</label></li>
+            <li><input type="checkbox" name="features" id="news" value="news" checked>
+              <label for="news">Новости</label></li>
 
-          <li><input type="checkbox" name="features" id="news" value="news" checked>
-            <label for="news">Новости</label></li>
+            <li><input type="checkbox" name="features" value="gallery" id="gallery">
+              <label for="gallery">Галерея</label></li>
 
-          <li><input type="checkbox" name="features" value="gallery" id="gallery">
-            <label for="gallery">Галерея</label></li>
-
-          <li><input type="checkbox" name="features" value="basket" id="basket">
-            <label for="basket">Корзина</label></li>
-        </ul>
-      </fieldset>
-      <button type="submit">Показать</button>
-    </form>
+            <li><input type="checkbox" name="features" value="basket" id="basket">
+              <label for="basket">Корзина</label></li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
+    </section>
     <section>
       <h2>Готовые шаблоны</h2>
       <ul>
@@ -113,25 +113,25 @@
   <footer>
     <div>
       <h3>NЁRDS DESIGN STUDIO</h3>
-      <p>
+      <div>
         <address>191186, Санкт-Петербург,
           ул. Б. Конюшенная, д. 19/8</address>
         <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-      </p>
-    </div>
-    <div>
-      <ul>
-        <li><a href="#"><img src="img/vk-icon.svg" width="21" height="21">Вконтакте</a></li>
-        <li><a href="#"><img src="img/fb-icon.svg" width="21" height="21">Фейсбук</a></li>
-        <li><a href="#"><img src="img/insta-icon.svg" width="21" height="21">Инстаграм</a></li>
-      </ul>
-    </div>
-    <p><span>Давайте дружить, это выгодно.</span>
-      Скидка 10% для друзей из социальных сетей.</p>
+        </p>
+      </div>
+      <div>
+        <ul>
+          <li><a href="#"><img src="img/vk-icon.svg" width="21" height="21">Вконтакте</a></li>
+          <li><a href="#"><img src="img/fb-icon.svg" width="21" height="21">Фейсбук</a></li>
+          <li><a href="#"><img src="img/insta-icon.svg" width="21" height="21">Инстаграм</a></li>
+        </ul>
+      </div>
+      <p><span>Давайте дружить, это выгодно.</span>
+        Скидка 10% для друзей из социальных сетей.</p>
   </footer>
   <section>
-    <form action="https://echo.htmlacademy.ru" method="get">
-      <h2>Напишите нам!</h2>
+    <h2>Напишите нам!</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
       <div>
         <label for="login">Ваше имя</label>
         <input type="text" name="login" id="login" placeholder="Представьтесь, пожалуйста">
@@ -141,10 +141,10 @@
         <input type="email" name="email" id="email" placeholder="Для отправки ответа">
       </div>
       <div><label for="comment">Текст письма</label>
-        <textarea id="comment" cols="30" rows="5" placeholder="В свободной форме"></textarea>
+        <textarea id="comment" cols="30" rows="5" name="comment" placeholder="В свободной форме"></textarea>
       </div>
       <button type="submit">Отправить</button>
     </form>
-    <Button type="button">Закрыть</Button>
+    <button type="button">Закрыть</button>
   </section>
 </body>
