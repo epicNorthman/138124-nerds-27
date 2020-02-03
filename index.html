@@ -107,20 +107,24 @@
       </div>
       <p><span>Давайте дружить, это выгодно.</span>
         Скидка 10% для друзей из социальных сетей.</p>
+    </div>
   </footer>
   <section>
-    <form action="#" method="post">
-      <Button type="button">Закрыть</Button>
-      <h1>Напишите нам!</h1>
-      <label for="login">Ваше имя</label><br>
-      <input type="text" name="login" id="login" value="Представьтесь, пожалуйста"><br>
-      <br>
-      <label for="email">Ваш e-mail</label><br>
-      <input type="email" name="email" id="email" value="Для отправки ответа"><br>
-      <br>
-      <label for="comment">Текст письма</label><br>
-      <textarea name="comment" id="comment" cols="30" rows="5">В свободной форме</textarea><br>
-      <button type="button">Отправить</button>
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <h2>Напишите нам!</h2>
+      <div>
+        <label for="login">Ваше имя</label>
+        <input type="text" name="login" id="login" placeholder="Представьтесь, пожалуйста">
+      </div>
+      <div>
+        <label for="email">Ваш e-mail</label>
+        <input type="email" name="email" id="email" placeholder="Для отправки ответа">
+      </div>
+      <div><label for="comment">Текст письма</label>
+        <textarea id="comment" cols="30" rows="5" placeholder="В свободной форме"></textarea>
+      </div>
+      <button type="submit">Отправить</button>
     </form>
+    <Button type="button">Закрыть</Button>
   </section>
 </body>
