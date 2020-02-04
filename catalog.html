@@ -28,10 +28,10 @@
       <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Стоимость</legend>
-          <label>от</label>
-          <input type="text" name="min-price" value="0">
-          <label>до</label>
-          <input type="text" name="max-price" value="15 000">
+          <label for="min">от</label>
+          <input type="text" name="min-price" value="0" id="min">
+          <label for="max">до</label>
+          <input type="text" name="max-price" value="15 000" id="max">
         </fieldset>
         <fieldset>
           <legend>Сетка:</legend>
@@ -69,11 +69,13 @@
       </form>
     </section>
     <section>
-      <legend>Сортировать:</legend>
+      <h3>Сортировать:</h3>
       <ul>
         <li><a href="#">По цене</a></li>
         <li><a href="#">По типу</a></li>
         <li><a href="#">По названию</a></li>
+        <li><a href="#">По убыванию</a></li>
+        <li><a href="#">По возрастанию</a></li>
       </ul>
     </section>
     <section>
@@ -82,38 +84,38 @@
         <li>
           <img src="img/img-sedona.jpg" alt="Макет Седона" width="360" height="576">
           <h2>Седона</h2>
-          <span>Информационный сайт для туристов</span>
-          <button>9 900 руб.</button>
+          <p>Информационный сайт для туристов</p>
+          <button type="button">9 900 руб.</button>
         </li>
         <li>
           <img src="img/img-pink.jpg" alt="Макет Пинк" width="360" height="576">
           <h2>Pink</h2>
-          <span>Лендинг приложения для iOS, Android и Windows Phone</span>
-          <button>9 900 руб.</button>
+          <p>Лендинг приложения для iOS, Android и Windows Phone</p>
+          <button type="button">9 900 руб.</button>
         </li>
         <li>
           <img src="img/img-barbershop.jpg" alt="Макет Барбершоп" width="360" height="576">
           <h2>Barbershop</h2>
-          <span>Мужской парикмахерский салон</span>
-          <button>9 900 руб.</button>
+          <p>Мужской парикмахерский салон</p>
+          <button type="button">9 900 руб.</button>
         </li>
         <li>
           <img src="img/img-mishka.jpg" alt="Макет Мишка" width="360" height="576">
           <h2>Mishka</h2>
-          <span>Интернет-магазин вязанных игрушек</span>
-          <button>9 900 руб.</button>
+          <p>Интернет-магазин вязанных игрушек</p>
+          <button type="button">9 900 руб.</button>
         </li>
         <li>
           <img src="img/img-aplus.jpg" alt="Макет А плюс" width="360" height="576">
           <h2>A plus</h2>
-          <span>Лендинг курсов повышения квалификации</span>
-          <button>9 900 руб.</button>
+          <p>Лендинг курсов повышения квалификации</p>
+          <button type="button">9 900 руб.</button>
         </li>
         <li>
           <img src="img/img-kvast.jpg" alt="Макет Квас" width="360" height="576">
           <h2>Кваст</h2>
-          <span>Промо-сайт производителя крафтового кваса</span>
-          <button>9 900 руб.</button>
+          <p>Промо-сайт производителя крафтового кваса</p>
+          <button type="button">9 900 руб.</button>
         </li>
       </ul>
       <ul>
@@ -136,7 +138,8 @@
         </p>
         <button type="button">Напишите нам</button>
       </div>
-      <img src="img/map-marker.png" alt="карта с местоположением офиса">
+      <img src="img/map-marker.png" alt="191186, Санкт-Петербург,
+      ул. Б. Конюшенная, д. 19/8">
     </section>
     <div>
       <ul>
