@@ -4,13 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <nav>
-      <img src="img/nerds-logo.svg" alt="логотип" width="160" height="65">
-      <ul>
+    <img src="img/nerds-logo.svg" alt="логотип" width="160" height="65">
+    <nav class="main-navigation">
+      <ul class="site-navigation">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
@@ -48,20 +51,20 @@
     </section>
     <section>
       <h2>Услуги</h2>
-      <ul>
-        <li>
+      <ul class="features-list">
+        <li class="features-item">
           <img src="img/illustration-1.jpg" alt="ноутбук на красном фоне" width="300" height="146">
           <h3>ВЕБ-САЙТЫ</h3>
           <p> Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a href="#">Заказать</a>
         </li>
-        <li>
+        <li class="features-item">
           <img src="img/illustration-2.jpg" alt="телефон на зеленом фоне" width="300" height="146">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <a href="#">Заказать</a>
         </li>
-        <li>
+        <li class="features-item">
           <img src="img/illustration-3.jpg" alt="график на желтом фоне" width="300" height="146">
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
@@ -130,16 +133,16 @@
       <img src="img/map-marker.png" alt="191186, Санкт-Петербург,
       ул. Б. Конюшенная, д. 19/8">
     </section>
-    <div>
+    <div class="footer">
       <ul>
         <li><a href="#"><img src="img/vk-icon.svg" width="21" height="21">Вконтакте</a></li>
         <li><a href="#"><img src="img/fb-icon.svg" width="21" height="21">Фейсбук</a></li>
         <li><a href="#"><img src="img/insta-icon.svg" width="21" height="21">Инстаграм</a></li>
       </ul>
     </div>
-    <div>
-      <p><span>Давайте дружить, это выгодно.</span>
-        Скидка 10% для друзей из социальных сетей.</p>
+    <div class="footer-text">
+      <p class="footer-text-top">Давайте дружить, это выгодно.</p>
+      <p class="footer-text-bottom">Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
   <section>
