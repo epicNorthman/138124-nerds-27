@@ -11,42 +11,34 @@ body {
   background-color: #ffffff;
 }
 
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
 
-.main-navigation {
-  font-size: 16px;
-  line-height: 30px;
-  color: #000000;
-
-  background-color: #ffffff;
-}
-
-.navigation-item a:hover {
-  color: #fb565a;
-}
-
-.site-navigation {
-  list-style: none;
-}
-
-.site-navigation a {
-  color: #000000;
-
-}
-
-.site-navigation a:hover,
-.site-navigation a:focus {
-  background-color: #fb565a;
-}
-
-.item-navigation :active {
-  background-color: #d7373b;
+li {
+  list-style-type: none;
 }
 
 .features-list {
   list-style: none;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .features-item {
@@ -54,16 +46,98 @@ a {
 }
 
 .features-item h3 {
+  text-transform: uppercase;
   font-size: 24px;
   line-height: 30px;
 }
 
+.button {
+  display: block;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.button-gallery {
+  width: 200px;
+  border: 0;
+  background-color: #fb565a;
+  margin: 0 auto;
+  margin-top: 28px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-radius: 5px;
+}
+}
+
+.features-button {
+  width: 160px;
+}
+
+.features-button-red, .catalog-item {
+  background-color: #fb565a;
+}
+
+.features-button-red:hover, .catalog-item:hover {
+  background-color: #e74246;
+}
+
+.features-button-red:focus, .catalog-item:focus {
+  background-color: #e74246;
+}
+
+.features-button-red:active, .catalog-item:active {
+  color: #e26f72;
+  background-color: #d7373b;
+  box-shadow: 0px 3px 0px 0px #c13135 inset;
+}
+
+.features-button-green {
+  background-color: #00ca74;
+}
+
+.features-button-green:hover {
+  background-color: #00bc6c;
+}
+
+.features-button-green:focus {
+  background-color: #00bc6c;
+}
+
+.features-button-green:active {
+  color: #00ca74;
+  background-color: #00aa62;
+  box-shadow: 0px 3px 0px 0px #00bc6c inset;
+}
+
+.features-button-yellow {
+  background-color: #efc84a;
+}
+
+.features-button-yellow:hover {
+  background-color: #eab534;
+}
+
+.features-button-yellow:focus {
+  background-color: #eab534;
+}
+
+.features-button-yellow:active {
+  color: #eab534;
+  background-color: #e5a722;
+  box-shadow: 0px 3px 0px 0px ;
+}
 .footer ul {
   list-style: none;
 }
 
 .footer-text {
-  text-align: center;
   color: #000000;
   background-color: #ffffff;
 }
@@ -73,11 +147,22 @@ a {
   font-size: 36px;
   line-height: 36px;
   color: #000000;
-
 }
 
 .footer-text-bottom {
   font-size: 16px;
   line-height: 22px;
   color: #444444;
+}
+
+.catalog-item {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.catalog-item h2 {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
 }
