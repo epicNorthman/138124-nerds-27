@@ -6,7 +6,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
-  color: 000000;
+  color: #000000;
 
   background-color: #ffffff;
 }
@@ -27,7 +27,11 @@ body {
   overflow: hidden;
 }
 
-.menu {
+.menu-navigation {
+  margin: 0px;
+}
+
+.menu-navigation-item a {
   color: #000000;
   font-weight: 500;
   font-size: 16px;
@@ -35,27 +39,30 @@ body {
   text-transform: uppercase;
 }
 
-.menu-navigation a {
-  color: #000000;
-  text-decoration: none;
+.menu-navigation-item a:hover,
+.menu-navigation-item a:focus {
+  color: #fb565a;
+
 }
 
-.menu-navigation a:hover,
-.menu-navigation a:active {
-  border-bottom: 2px solid #fb565a
-}
-
-.menu a:hover {
-  color: #d7373b;
-}
-
-.menu a:active{
+.menu-navigation-item a:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.menu-navigation-item-active a,
+.menu-navigation-item-active a:hover,
+.menu-navigation-item-active a:focus,
+.menu-navigation-item-active a:active {
+  color: #000000;
+  border-bottom: 2px solid #fb565a;
 }
 
 .header-background {
   background-color: #eeeeee;
-  height: 355px;
+}
+
+.h1-background {
+  background-color: #eeeeee;
 }
 
 .page-title {
@@ -63,6 +70,7 @@ body {
   line-height: 55px;
   color: #000000;
   text-align: center;
+  margin: 0px;
 }
 
 a {
@@ -117,9 +125,15 @@ li {
   width: 160px;
 }
 
+.catalog-info {
+  background-color: #eeeeee;
+  width: 360px;
+}
+
 .features-button-red,
 .catalog-item {
-  background-color: #fb565a;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .features-button-red:hover,
@@ -208,7 +222,7 @@ li {
 .catalog-discription {
   font-size: 16px;
   line-height: 18px;
-  color: #939393;
+  color: #666666;
   margin: 0;
   padding: 0;
 }
