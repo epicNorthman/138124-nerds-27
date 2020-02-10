@@ -130,11 +130,18 @@ li {
   width: 360px;
 }
 
-.features-button-red,
+
 .catalog-item {
   color: #ffffff;
   text-transform: uppercase;
 }
+
+.features-button-red {
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #fb565a;
+}
+
 
 .features-button-red:hover,
 .catalog-item:hover {
