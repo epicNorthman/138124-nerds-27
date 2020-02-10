@@ -46,14 +46,14 @@ body {
 }
 
 .menu-navigation-item a:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .menu-navigation-item-active a,
 .menu-navigation-item-active a:hover,
 .menu-navigation-item-active a:focus,
 .menu-navigation-item-active a:active {
-  color: #000000;
+  color: ;
   border-bottom: 2px solid #fb565a;
 }
 
