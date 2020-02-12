@@ -27,9 +27,50 @@ body {
   overflow: hidden;
 }
 
-.menu-navigation {
-  margin: 0px;
+.menu-header {
+
 }
+
+.menu li {
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-header-logo {
+  width: 160;
+  height: 65;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.menu-navigation {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
 
 .menu-navigation-item a {
   color: #000000;
@@ -53,7 +94,7 @@ body {
 .menu-navigation-item-active a:hover,
 .menu-navigation-item-active a:focus,
 .menu-navigation-item-active a:active {
-  color: ;
+  color: #000000;
   border-bottom: 2px solid #fb565a;
 }
 
