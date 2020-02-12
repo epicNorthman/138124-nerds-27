@@ -11,6 +11,9 @@ body {
   background-color: #ffffff;
 }
 
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
 .visuallyhidden:not(:focus):not(:active) {
   position: absolute;
 
@@ -27,20 +30,28 @@ body {
   overflow: hidden;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
 .menu-header {
 
 }
 
-.menu li {
+.menu {
   display: inline-block;
   flex-direction: column;
-  align-items: center;
+
 
 }
 
 .main-navigation-wrapper .container {
   display: flex;
-  justify-content: space-between;
+
 }
 
 .menu-header-logo {
@@ -52,13 +63,10 @@ body {
   width: 100%;
 }
 
-.container {
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
 
 .menu-navigation {
+  display: inline-flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
