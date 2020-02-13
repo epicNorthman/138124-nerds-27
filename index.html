@@ -10,17 +10,22 @@
 </head>
 
 <body>
-  <header class="header-background">
-    <img src="img/nerds-logo.svg" alt="логотип" width="160" height="65">
-    <nav class="menu">
-      <ul class="menu-navigation">
-        <li class="menu-navigation-item"><a href="#">Студия</a></li>
-        <li class="menu-navigation-item"><a href="#">Клиенты</a></li>
-        <li class="menu-navigation-item menu-navigation-item-active"><a href="catalog.html">Магазин</a></li>
-        <li class="menu-navigation-item"><a href="#">Контакты</a></li>
-        <li class="menu-navigation-item"><a href="#">Корзина</a></li>
-      </ul>
-    </nav>
+  <header class="header-background menu-header">
+    <div class="container">
+      <nav class="menu-header-wrapper">
+        <a href="index.html" class="menu-header-logo"><img src="img/nerds-logo.svg" alt="логотип" width="160"
+            height="65"></a>
+        <div class="menu-navigation-wrapper">
+          <ul class="menu-navigation">
+            <li class="menu-navigation-item"><a href="#">Студия</a></li>
+            <li class="menu-navigation-item"><a href="#">Клиенты</a></li>
+            <li class="menu-navigation-item menu-navigation-item-active"><a>Магазин</a></li>
+            <li class="menu-navigation-item"><a href="#">Контакты</a></li>
+            <li class="menu-navigation-item"><a href="#">Корзина</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main>
     <section>
@@ -51,26 +56,28 @@
     </section>
     <section>
       <h2 class="visuallyhidden">Услуги</h2>
-      <ul class="features-list">
-        <li class="features-item">
-          <img src="img/illustration-1.jpg" alt="ноутбук на красном фоне" width="300" height="146">
-          <h3>веб-сайты</h3>
-          <p> Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a href="#" class="button features-button features-button-red">Заказать</a>
-        </li>
-        <li class="features-item">
-          <img src="img/illustration-2.jpg" alt="телефон на зеленом фоне" width="300" height="146">
-          <h3>приложения</h3>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a href="#" class="button features-button features-button-green">Заказать</a>
-        </li>
-        <li class="features-item">
-          <img src="img/illustration-3.jpg" alt="график на желтом фоне" width="300" height="146">
-          <h3>презентации</h3>
-          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a href="#" class="button features-button features-button-yellow">Заказать</a>
-        </li>
-      </ul>
+      <div class="container">
+        <ul class="features-list">
+          <li class="features-item">
+            <img src="img/illustration-1.jpg" alt="ноутбук на красном фоне" width="300" height="146">
+            <h3>веб-сайты</h3>
+            <p> Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a href="#" class="button features-button features-button-red">Заказать</a>
+          </li>
+          <li class="features-item">
+            <img src="img/illustration-2.jpg" alt="телефон на зеленом фоне" width="300" height="146">
+            <h3>приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a href="#" class="button features-button features-button-green">Заказать</a>
+          </li>
+          <li class="features-item">
+            <img src="img/illustration-3.jpg" alt="график на желтом фоне" width="300" height="146">
+            <h3>презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a href="#" class="button features-button features-button-yellow">Заказать</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section>
       <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
