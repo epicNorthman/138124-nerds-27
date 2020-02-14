@@ -50,6 +50,27 @@ html {
 }
 
 
+.grid {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+}
+
+.special {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .menu-header-wrapper {
   display: flex;
   flex-direction: row;
@@ -84,9 +105,6 @@ html {
   padding-right: 100px;
   margin: 80px 0px 80px 0px;
 }
-
-
-
 
 .index-column {
   display: flex;
@@ -126,11 +144,12 @@ html {
   justify-content: space-between;
 }
 
-
-
-
-
-
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 360px;
+}
 
 
 .menu-navigation-item a {
@@ -233,6 +252,8 @@ li {
 .catalog-info {
   background-color: #eeeeee;
   width: 360px;
+  display: none;
+
 }
 
 
