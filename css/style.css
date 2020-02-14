@@ -81,11 +81,55 @@ html {
 }
 
 .features-item {
-  display: inline-block;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  margin-right: 200px;
+  padding-right: 100px;
+  margin: 80px 0px 80px 0px;
 }
+
+
+
+
+.index-column {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.about {
+  width: 660px;
+  margin-bottom: 80px;
+  margin-left: 20px;
+}
+
+.plus {
+  width: 360px;
+  margin-bottom: 80px;
+
+}
+
+.partner {
+  display: flex;
+  padding-top: 46px;
+
+}
+
+
+.footer-discount {
+  width: 560px;
+}
+
+.footer-social {
+  width: 260px;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
 
 
 
@@ -121,6 +165,7 @@ html {
 
 .h1-background {
   background-color: #eeeeee;
+
 }
 
 .page-title {
@@ -130,6 +175,7 @@ html {
   text-align: center;
   margin: 0px;
   padding-bottom: 117px;
+
 }
 
 a {
