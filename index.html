@@ -17,9 +17,9 @@
             height="65"></a>
         <div class="menu-navigation-wrapper">
           <ul class="menu-navigation">
-            <li class="menu-navigation-item"><a href="#">Студия</a></li>
+            <li class="menu-navigation-item menu-navigation-item-active"><a href="#">Студия</a></li>
             <li class="menu-navigation-item"><a href="#">Клиенты</a></li>
-            <li class="menu-navigation-item menu-navigation-item-active"><a href="catalog.html">Магазин</a></li>
+            <li class="menu-navigation-item"><a href="catalog.html">Магазин</a></li>
             <li class="menu-navigation-item"><a href="#">Контакты</a></li>
             <li class="menu-navigation-item"><a href="#">Корзина</a></li>
           </ul>
@@ -27,7 +27,7 @@
       </nav>
     </div>
   </header>
-  <main class="container">
+  <main>
     <section>
       <h2 class="visuallyhidden">Слайдеры</h2>
       <ul>
@@ -54,32 +54,34 @@
         </li>
       </ul>
     </section>
-    <section>
-      <h2 class="visuallyhidden">Услуги</h2>
-      <div>
-        <ul class="features-list">
-          <li class="features-item">
-            <img src="img/illustration-1.jpg" alt="ноутбук на красном фоне" width="300" height="146">
-            <h3>веб-сайты</h3>
-            <p> Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a href="#" class="button features-button features-button-red">Заказать</a>
-          </li>
-          <li class="features-item">
-            <img src="img/illustration-2.jpg" alt="телефон на зеленом фоне" width="300" height="146">
-            <h3>приложения</h3>
-            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="#" class="button features-button features-button-green">Заказать</a>
-          </li>
-          <li class="features-item">
-            <img src="img/illustration-3.jpg" alt="график на желтом фоне" width="300" height="146">
-            <h3>презентации</h3>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a href="#" class="button features-button features-button-yellow">Заказать</a>
-          </li>
-        </ul>
-      </div>
+    <div class="container">
+      <section>
+        <h2 class="visuallyhidden">Услуги</h2>
+        <div>
+          <ul class="features-list">
+            <li class="features-item">
+              <img src="img/illustration-1.jpg" alt="ноутбук на красном фоне" width="300" height="146">
+              <h3>веб-сайты</h3>
+              <p> Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <a href="#" class="button features-button features-button-red">Заказать</a>
+            </li>
+            <li class="features-item">
+              <img src="img/illustration-2.jpg" alt="телефон на зеленом фоне" width="300" height="146">
+              <h3>приложения</h3>
+              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+              <a href="#" class="button features-button features-button-green">Заказать</a>
+            </li>
+            <li class="features-item">
+              <img src="img/illustration-3.jpg" alt="график на желтом фоне" width="300" height="146">
+              <h3>презентации</h3>
+              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+              <a href="#" class="button features-button features-button-yellow">Заказать</a>
+            </li>
+          </ul>
+        </div>
+    </div>
     </section>
-    <div class="index-column">
+    <div class="index-column container">
       <section class="about">
         <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
         <p>
@@ -111,54 +113,48 @@
         </table>
       </section>
     </div>
-    <div class="index-column">
-      <section class="menu-navigation partner">
+    <div class="container partner">
+      <section>
         <h2 class="visuallyhidden">Партнеры</h2>
         <ul>
           <li><a href=""><img src="img/logo-1.png" alt="логотип html академии" width="199" height="68"></a></li>
-        </ul>
-        <ul>
           <li><a href=""><img src="img/logo-2.png" alt="логотип барбершопа" width="209" height="90"></a></li>
-        </ul>
-        <ul>
           <li><a href=""><img src="img/logo-3.png" alt="логотип приложения Pink" width="185" height="52"></a></li>
-        </ul>
-        <ul>
           <li><a href=""><img src="img/logo-4.png" alt="логотип магазина ручных изделий для дома Mishka" width="173"
                 height="84"></a></li>
         </ul>
       </section>
     </div>
   </main>
-  <footer class="container">
+  <footer>
     <section>
       <div>
-        <h3>NЁRDS DESIGN STUDIO</h3>
-        <p>
+        <div>
+          <h3>NЁRDS DESIGN STUDIO</h3>
           <address>191186, Санкт-Петербург,
             ул. Б. Конюшенная, д. 19/8</address>
           <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-        </p>
-        <button type="button"><a href="">Напишите нам</a></button>
-      </div>
-      <img src="img/map-marker.png" alt="191186, Санкт-Петербург,
+          <a href="">Напишите нам</a>
+        </div>
+        <img src="img/map-marker.png" alt="191186, Санкт-Петербург,
       ул. Б. Конюшенная, д. 19/8">
+      </div>
     </section>
-    <div class="footer-menu">
-    <div class="footer">
-      <ul>
-        <li><a href="#"><img src="img/vk-icon.svg" width="21" height="21">Вконтакте</a></li>
-        <li><a href="#"><img src="img/fb-icon.svg" width="21" height="21">Фейсбук</a></li>
-        <li><a href="#"><img src="img/insta-icon.svg" width="21" height="21">Инстаграм</a></li>
-      </ul>
-    </div>
-    <div class="footer-text">
-      <p class="footer-text-top">Давайте дружить, это выгодно.</p>
-      <p class="footer-text-bottom">Скидка 10% для друзей из социальных сетей.</p>
-    </div>
+    <div class="footer-menu container">
+      <div class="footer">
+        <ul>
+          <li><a href="#"><img src="img/vk-icon.svg" width="21" height="21">Вконтакте</a></li>
+          <li><a href="#"><img src="img/fb-icon.svg" width="21" height="21">Фейсбук</a></li>
+          <li><a href="#"><img src="img/insta-icon.svg" width="21" height="21">Инстаграм</a></li>
+        </ul>
+      </div>
+      <div class="footer-text">
+        <p class="footer-text-top">Давайте дружить, это выгодно.</p>
+        <p class="footer-text-bottom">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </div>
   </footer>
-  <section class="container">
+  <section class="modal visuallyhidden">
     <h2>Напишите нам!</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
       <div>

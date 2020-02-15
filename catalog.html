@@ -17,7 +17,7 @@
             height="65"></a>
         <div class="menu-navigation-wrapper">
           <ul class="menu-navigation">
-            <li class="menu-navigation-item"><a href="#">Студия</a></li>
+            <li class="menu-navigation-item"><a href="index.html">Студия</a></li>
             <li class="menu-navigation-item"><a href="#">Клиенты</a></li>
             <li class="menu-navigation-item menu-navigation-item-active"><a>Магазин</a></li>
             <li class="menu-navigation-item"><a href="#">Контакты</a></li>
@@ -31,123 +31,127 @@
     <div class="h1-background">
       <h1 class="page-title">Магазин готовых шаблонов</h1>
     </div>
-    <section>
-      <h2 class="visuallyhidden">Фильтр шаблонов</h2>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <fieldset>
-          <legend>Стоимость</legend>
-          <label for="min">от</label>
-          <input type="text" name="min-price" value="0" id="min">
-          <label for="max">до</label>
-          <input type="text" name="max-price" value="15 000" id="max">
-        </fieldset>
-        <div class="grid">
-        <fieldset>
-          <legend>Сетка:</legend>
+    <div class="container">
+      <section>
+        <h2 class="visuallyhidden">Фильтр шаблонов</h2>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Стоимость</legend>
+            <label for="min">от</label>
+            <input type="text" name="min-price" value="0" id="min">
+            <label for="max">до</label>
+            <input type="text" name="max-price" value="15 000" id="max">
+          </fieldset>
+          <div class="grid">
+            <fieldset>
+              <legend>Сетка:</legend>
+              <ul>
+                <li><input type="radio" name="grid" id="adaptive" value="grid_adaptive" checked>
+                  <label for="adaptive">Адаптивная</label></li>
+
+                <li><input type="radio" name="grid" id="fluid" value="grid_fluid">
+                  <label for="fluid">Фиксированная</label></li>
+
+                <li><input type="radio" name="grid" id="fix" value="grid_fix">
+                  <label for="fix">Разиновая</label></li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности:</legend>
+              <ul>
+                <li><input type="checkbox" name="features" id="slider" value="slider" checked>
+                  <label for="slider">Слайдер</label></li>
+
+                <li><input type="checkbox" name="features" id="advantages" value="advantages">
+                  <label for="advantages">Блок преимущества</label></li>
+
+                <li><input type="checkbox" name="features" id="news" value="news" checked>
+                  <label for="news">Новости</label></li>
+
+                <li><input type="checkbox" name="features" value="gallery" id="gallery">
+                  <label for="gallery">Галерея</label></li>
+
+                <li><input type="checkbox" name="features" value="basket" id="basket">
+                  <label for="basket">Корзина</label></li>
+              </ul>
+            </fieldset>
+          </div>
+          <button type="submit">Показать</button>
+        </form>
+      </section>
+      <div class="filtr-list">
+        <section>
+          <h3>Сортировать:</h3>
           <ul>
-            <li><input type="radio" name="grid" id="adaptive" value="grid_adaptive" checked>
-              <label for="adaptive">Адаптивная</label></li>
-
-            <li><input type="radio" name="grid" id="fluid" value="grid_fluid">
-              <label for="fluid">Фиксированная</label></li>
-
-            <li><input type="radio" name="grid" id="fix" value="grid_fix">
-              <label for="fix">Разиновая</label></li>
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По названию</a></li>
+            <li><a href="#">По убыванию</a></li>
+            <li><a href="#">По возрастанию</a></li>
           </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Особенности:</legend>
+        </section>
+        <section>
+          <h2 class="visuallyhidden">Готовые шаблоны</h2>
+          <ul class="gallery">
+            <li>
+              <img src="img/img-sedona.jpg" alt="Макет Седона" width="360" height="576">
+              <div class="catalog-info">
+                <h2 class="catalog-title">Седона</h2>
+                <p class="catalog-discription">Информационный сайт для туристов</p>
+                <button type="button" class="button-gallery catalog-item">9 900 руб.</button>
+              </div>
+            </li>
+            <li>
+              <img src="img/img-pink.jpg" alt="Макет Пинк" width="360" height="576">
+              <div class="catalog-info">
+                <h2 class="catalog-title">Pink</h2>
+                <p class="catalog-discription">Лендинг приложения для iOS, Android и Windows Phone</p>
+                <button type="button" class="button-gallery catalog-item">9 900 руб.</button>
+              </div>
+            </li>
+            <li>
+              <img src="img/img-barbershop.jpg" alt="Макет Барбершоп" width="360" height="576">
+              <div class="catalog-info">
+                <h2 class="catalog-title">Barbershop</h2>
+                <p class="catalog-discription">Мужской парикмахерский салон</p>
+                <button type="button" class="button-gallery catalog-item">9 900 руб.</button>
+              </div>
+            </li>
+            <li>
+              <img src="img/img-mishka.jpg" alt="Макет Мишка" width="360" height="576">
+              <div class="catalog-info">
+                <h2 class="catalog-title">Mishka</h2>
+                <p class="catalog-discription">Интернет-магазин вязанных игрушек</p>
+                <button type="button" class="button-gallery catalog-item">9 900 руб.</button>
+              </div>
+            </li>
+            <li>
+              <img src="img/img-aplus.jpg" alt="Макет А плюс" width="360" height="576">
+              <div class="catalog-info">
+                <h2 class="catalog-title">A plus</h2>
+                <p class="catalog-discription">Лендинг курсов повышения квалификации</p>
+                <button type="button" class="button-gallery catalog-item">9 900 руб.</button>
+              </div>
+            </li>
+            <li>
+              <img src="img/img-kvast.jpg" alt="Макет Квас" width="360" height="576">
+              <div class="catalog-info">
+                <h2 class="catalog-title">Кваст</h2>
+                <p class="catalog-discription">Промо-сайт производителя крафтового кваса</p>
+                <button type="button" class="button-gallery catalog-item">9 900 руб.</button>
+              </div>
+            </li>
+          </ul>
           <ul>
-            <li><input type="checkbox" name="features" id="slider" value="slider" checked>
-              <label for="slider">Слайдер</label></li>
-
-            <li><input type="checkbox" name="features" id="advantages" value="advantages">
-              <label for="advantages">Блок преимущества</label></li>
-
-            <li><input type="checkbox" name="features" id="news" value="news" checked>
-              <label for="news">Новости</label></li>
-
-            <li><input type="checkbox" name="features" value="gallery" id="gallery">
-              <label for="gallery">Галерея</label></li>
-
-            <li><input type="checkbox" name="features" value="basket" id="basket">
-              <label for="basket">Корзина</label></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">Следующая</a></li>
           </ul>
-        </fieldset>
-        </div>
-        <button type="submit">Показать</button>
-      </form>
-    </section>
-    <section>
-      <h3>Сортировать:</h3>
-      <ul>
-        <li><a href="#">По цене</a></li>
-        <li><a href="#">По типу</a></li>
-        <li><a href="#">По названию</a></li>
-        <li><a href="#">По убыванию</a></li>
-        <li><a href="#">По возрастанию</a></li>
-      </ul>
-    </section>
-    <section class="container">
-      <h2 class="visuallyhidden">Готовые шаблоны</h2>
-      <ul class="gallery">
-        <li>
-          <img src="img/img-sedona.jpg" alt="Макет Седона" width="360" height="576">
-          <div class="catalog-info">
-            <h2 class="catalog-title">Седона</h2>
-            <p class="catalog-discription">Информационный сайт для туристов</p>
-            <button type="button" class="button-gallery catalog-item">9 900 руб.</button>
-          </div>
-        </li>
-        <li>
-          <img src="img/img-pink.jpg" alt="Макет Пинк" width="360" height="576">
-          <div class="catalog-info">
-            <h2 class="catalog-title">Pink</h2>
-            <p class="catalog-discription">Лендинг приложения для iOS, Android и Windows Phone</p>
-            <button type="button" class="button-gallery catalog-item">9 900 руб.</button>
-          </div>
-        </li>
-        <li>
-          <img src="img/img-barbershop.jpg" alt="Макет Барбершоп" width="360" height="576">
-          <div class="catalog-info">
-            <h2 class="catalog-title">Barbershop</h2>
-            <p class="catalog-discription">Мужской парикмахерский салон</p>
-            <button type="button" class="button-gallery catalog-item">9 900 руб.</button>
-          </div>
-        </li>
-        <li>
-          <img src="img/img-mishka.jpg" alt="Макет Мишка" width="360" height="576">
-          <div class="catalog-info">
-            <h2 class="catalog-title">Mishka</h2>
-            <p class="catalog-discription">Интернет-магазин вязанных игрушек</p>
-            <button type="button" class="button-gallery catalog-item">9 900 руб.</button>
-          </div>
-        </li>
-        <li>
-          <img src="img/img-aplus.jpg" alt="Макет А плюс" width="360" height="576">
-          <div class="catalog-info">
-            <h2 class="catalog-title">A plus</h2>
-            <p class="catalog-discription">Лендинг курсов повышения квалификации</p>
-            <button type="button" class="button-gallery catalog-item">9 900 руб.</button>
-          </div>
-        </li>
-        <li>
-          <img src="img/img-kvast.jpg" alt="Макет Квас" width="360" height="576">
-          <div class="catalog-info">
-            <h2 class="catalog-title">Кваст</h2>
-            <p class="catalog-discription">Промо-сайт производителя крафтового кваса</p>
-            <button type="button" class="button-gallery catalog-item">9 900 руб.</button>
-          </div>
-        </li>
-      </ul>
-      <ul>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">Следующая</a></li>
-      </ul>
-    </section>
+        </section>
+      </div>
+    </div>
   </main>
   <footer class="container">
     <section>
@@ -164,17 +168,17 @@
       ул. Б. Конюшенная, д. 19/8">
     </section>
     <div class="footer-menu">
-    <div class="footer">
-      <ul>
-        <li><a href="#"><img src="img/vk-icon.svg" width="21" height="21">Вконтакте</a></li>
-        <li><a href="#"><img src="img/fb-icon.svg" width="21" height="21">Фейсбук</a></li>
-        <li><a href="#"><img src="img/insta-icon.svg" width="21" height="21">Инстаграм</a></li>
-      </ul>
-    </div>
-    <div class="footer-text">
-      <p class="footer-text-top">Давайте дружить, это выгодно.</p>
-      <p class="footer-text-bottom">Скидка 10% для друзей из социальных сетей.</p>
-    </div>
+      <div class="footer">
+        <ul>
+          <li><a href="#"><img src="img/vk-icon.svg" width="21" height="21">Вконтакте</a></li>
+          <li><a href="#"><img src="img/fb-icon.svg" width="21" height="21">Фейсбук</a></li>
+          <li><a href="#"><img src="img/insta-icon.svg" width="21" height="21">Инстаграм</a></li>
+        </ul>
+      </div>
+      <div class="footer-text">
+        <p class="footer-text-top">Давайте дружить, это выгодно.</p>
+        <p class="footer-text-bottom">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </div>
   </footer>
   <section class="container">
