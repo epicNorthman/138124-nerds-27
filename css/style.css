@@ -126,11 +126,16 @@ html {
 }
 
 .partner {
+  align-items: center;
+  padding: 46px 30px 48px 30px;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 80px;
+}
+
+.partner-list {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 40px 30px 48px 30px;
-  border-bottom: 2px solid #eee;
+
 }
 
 
