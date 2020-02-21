@@ -21,7 +21,7 @@
             <li class="menu-navigation-item"><a href="#">Клиенты</a></li>
             <li class="menu-navigation-item menu-navigation-item-active"><a>Магазин</a></li>
             <li class="menu-navigation-item"><a href="#">Контакты</a></li>
-            <li class="menu-navigation-item"><a href="#">Корзина</a></li>
+            <li class="menu-navigation-item cart-link"><a href="#">Корзина</a></li>
           </ul>
         </div>
       </nav>
@@ -31,16 +31,25 @@
     <div class="h1-background">
       <h1 class="page-title">Магазин готовых шаблонов</h1>
     </div>
-    <div class="container">
+    <div class="container filtr">
       <section>
         <h2 class="visuallyhidden">Фильтр шаблонов</h2>
         <form action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
+          <fieldset class="filtr-item">
             <legend>Стоимость</legend>
-            <label for="min">от</label>
-            <input type="text" name="min-price" value="0" id="min">
-            <label for="max">до</label>
-            <input type="text" name="max-price" value="15 000" id="max">
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от<input name="min-price" type="number" value="0"></label>
+                <label class="max-price">до<input name="max-price" type="number" value="15000"></label>
+              </div>
+            </div>
           </fieldset>
           <div class="grid">
             <fieldset>
@@ -76,19 +85,20 @@
               </ul>
             </fieldset>
           </div>
-          <button type="submit">Показать</button>
+          <button class="button-filtr" type="submit">Показать</button>
         </form>
       </section>
       <div class="filtr-list">
         <section>
-          <h3>Сортировать:</h3>
-          <ul>
-            <li><a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По названию</a></li>
-            <li><a href="#">По убыванию</a></li>
-            <li><a href="#">По возрастанию</a></li>
-          </ul>
+          <div class="list-type">
+            <ul class="filtr-list-type"><span>Cортировать:</span>
+              <li><a href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По названию</a></li>
+              <li><a href="#">По убыванию</a></li>
+              <li><a href="#">По возрастанию</a></li>
+            </ul>
+          </div>
         </section>
         <section>
           <h2 class="visuallyhidden">Готовые шаблоны</h2>
@@ -142,12 +152,11 @@
               </div>
             </li>
           </ul>
-          <ul>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">Следующая</a></li>
+          <ul class="page-number">
+            <li class="number-page page-active"><a href="#">1</a></li>
+            <li class="number-page"><a href="#">2</a></li>
+            <li class="number-page"><a href="#">3</a></li>
+            <li class="number-page"><a href="#">Следующая</a></li>
           </ul>
         </section>
       </div>
@@ -155,7 +164,7 @@
   </main>
   <footer>
     <section>
-      <div>
+      <div footer-address>
         <div>
           <h3>NЁRDS DESIGN STUDIO</h3>
           <address>191186, Санкт-Петербург,
@@ -169,10 +178,10 @@
     </section>
     <div class="footer-menu container">
       <div class="footer">
-        <ul>
-          <li><a href="#"><img src="img/vk-icon.svg" width="21" height="21">Вконтакте</a></li>
-          <li><a href="#"><img src="img/fb-icon.svg" width="21" height="21">Фейсбук</a></li>
-          <li><a href="#"><img src="img/insta-icon.svg" width="21" height="21">Инстаграм</a></li>
+        <ul class="social-icon">
+          <li class="footer-item footer-item-icon"><a href="#"><img src="img/vk-icon.svg" width="21" height="21" alt="Вконтакте"></a></li>
+          <li class="footer-item footer-item-icon"><a href="#"><img src="img/fb-icon.svg" width="21" height="21" alt="Фейсбук"></a></li>
+          <li class="footer-item footer-item-icon"><a href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a></li>
         </ul>
       </div>
       <div class="footer-text">
