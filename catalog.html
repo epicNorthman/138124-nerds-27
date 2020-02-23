@@ -55,33 +55,67 @@
             <fieldset>
               <legend>Сетка:</legend>
               <ul>
-                <li><input type="radio" name="grid" id="adaptive" value="grid_adaptive" checked>
-                  <label for="adaptive">Адаптивная</label></li>
-
-                <li><input type="radio" name="grid" id="fluid" value="grid_fluid">
-                  <label for="fluid">Фиксированная</label></li>
-
-                <li><input type="radio" name="grid" id="fix" value="grid_fix">
-                  <label for="fix">Разиновая</label></li>
+                <li>
+                  <label class="check option">
+                    <input class="check-input" type="radio" name="grid" value="grid_adaptive" checked>
+                    <span class="check-radio"></span>
+                    Адаптивная
+                  </label>
+                </li>
+                <li>
+                  <label class="check option">
+                    <input class="check-input" type="radio" name="grid" value="grid_fluid">
+                    <span class="check-radio"></span>
+                    Фиксированная
+                  </label>
+                <li>
+                </li>
+                <label class="check option" for="fix">
+                  <input class="check-input" type="radio" name="grid" id="fix" value="grid_fix">
+                  <span class="check-radio"></span>
+                  Разиновая
+                </label>
+                </li>
               </ul>
             </fieldset>
             <fieldset>
               <legend>Особенности:</legend>
               <ul>
-                <li><input type="checkbox" name="features" id="slider" value="slider" checked>
-                  <label for="slider">Слайдер</label></li>
-
-                <li><input type="checkbox" name="features" id="advantages" value="advantages">
-                  <label for="advantages">Блок преимущества</label></li>
-
-                <li><input type="checkbox" name="features" id="news" value="news" checked>
-                  <label for="news">Новости</label></li>
-
-                <li><input type="checkbox" name="features" value="gallery" id="gallery">
-                  <label for="gallery">Галерея</label></li>
-
-                <li><input type="checkbox" name="features" value="basket" id="basket">
-                  <label for="basket">Корзина</label></li>
+                <li>
+                  <label class="check option">
+                    <input class="check-input" type="checkbox" name="features" value="slider" checked>
+                    <span class="check-box"></span>
+                    Слайдер
+                  </label>
+                </li>
+                <li>
+                  <label class="check option">
+                    <input class="check-input" type="checkbox" name="features" value="advantages">
+                    <span class="check-box"></span>
+                    Блок преимуществ
+                  </label>
+                </li>
+                <li>
+                  <label class="check option">
+                    <input class="check-input" type="checkbox" name="features" value="news" checked>
+                    <span class="check-box"></span>
+                    Новости
+                  </label>
+                </li>
+                <li>
+                  <label class="check option">
+                    <input class="check-input" type="checkbox" name="features" value="gallery">
+                    <span class="check-box"></span>
+                    Галерея
+                  </label>
+                </li>
+                <li>
+                  <label class="check option">
+                    <input class="check-input" type="checkbox" name="features" value="basket">
+                    <span class="check-box"></span>
+                    Корзина
+                  </label>
+                </li>
               </ul>
             </fieldset>
           </div>
@@ -91,12 +125,12 @@
       <div class="filtr-list">
         <section>
           <div class="list-type">
-            <ul class="filtr-list-type"><span>Cортировать:</span>
-              <li><a href="#">По цене</a></li>
-              <li><a href="#">По типу</a></li>
-              <li><a href="#">По названию</a></li>
-              <li><a href="#">По убыванию</a></li>
-              <li><a href="#">По возрастанию</a></li>
+            <ul class="filtr-list-type"><span class="filtr-list-span">Cортировать:</span>
+              <li><a href="#" class="filtr-price">По цене</a></li>
+              <li><a href="#" class="filtr-type">По типу</a></li>
+              <li><a href="#" class="filtr-name">По названию</a></li>
+              <li><a class="filtr-down" href="#"></a></li>
+              <li><a class="filtr-up" href="#"></a></li>
             </ul>
           </div>
         </section>
