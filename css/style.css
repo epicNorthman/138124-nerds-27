@@ -117,7 +117,7 @@ legend {
 .filtr-item {
   margin: 0;
   padding: 0;
-  margin-top: 63px;
+  margin-top: 60px;
 }
 
 .range-filter {
@@ -405,13 +405,6 @@ legend {
   justify-content: space-between;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: 100px;
-}
-
 .menu-navigation-item a {
   color: #000000;
   font-weight: 500;
@@ -488,17 +481,6 @@ li {
   border-radius: 5px;
 }
 
-.button-gallery {
-  width: 200px;
-  border: 0;
-  background-color: #fb565a;
-  margin: 0 auto;
-  margin-top: 28px;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  border-radius: 5px;
-}
-
 .features-button {
   width: 160px;
 }
@@ -508,7 +490,7 @@ li {
   border: 0;
   background-color: #eeeeee;
   margin: 0 auto;
-  margin-top: 48px;
+  margin-top: 43px;
   padding-top: 17px;
   padding-bottom: 17px;
   border-radius: 5px;
@@ -526,7 +508,7 @@ li {
   font-size: 16px;
   line-height: 18px;
   background-color: #eee;
-  border-radius: 5%;
+  border-radius: 3px;
   margin-right: 6px;
   border: 0;
   text-transform: uppercase;
@@ -571,15 +553,114 @@ li {
   box-sizing: border-box;
 }
 
-.catalog-info {
-  background-color: #eeeeee;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 100px;
+}
+
+.gallery-catalog {
+  position: relative;
+  margin-bottom: 74px;
+}
+
+.gallery-catalog::before {
+  content: "";
+  position: absolute;
   width: 360px;
+  height: 40px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #e9e9e9;
+  top: -40px;
+}
+
+.gallery-catalog::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  left: 50px;
+  top: -27px;
+  box-shadow: 25px 0 0 0 #fff,
+    -25px 0 0 0 #fff;
+}
+
+.gallery-catalog:hover {
+  top: -6px;
+  box-shadow: 0px 7px 9px -3px #cfcfcf;
+}
+
+.gallery-catalog:hover .catalog-info {
+  display: block;
+}
+
+.gallery-catalog:hover::before {
+  background-color: #4d4d4d;
+}
+
+.catalog-info {
+  position: absolute;
+  height: 231px;
+  width: 360px;
+  background-color: #eee;
+  box-sizing: border-box;
+  bottom: 0;
+  text-align: center;
   display: none;
 }
 
-.catalog-item {
+.catalog-title {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
+  padding: 28px 0 18px 0;
+  text-transform: uppercase;
+}
+
+.catalog-title:hover {
+  color: #fb565a;
+}
+
+.catalog-title:active {
+  color: #b2b2b2;
+}
+
+.catalog-discription {
+  font-size: 16px;
+  line-height: 18px;
+  color: #939393;
+  margin: 0;
+  padding: 0;
+}
+
+.button-gallery {
+  width: 200px;
+  border: 0;
+  background-color: #fb565a;
+  margin: 0 auto;
+  margin-top: 28px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-radius: 5px;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.button-gallery:hover {
+  background-color: #e74246;
+}
+
+.button-gallery:focus {
+  background-color: #e74246;
+}
+
+.button-gallery:active {
+  background-color: #d7373b;
+  box-shadow: 0px 3px 0px 0px #c13135 inset;
 }
 
 .features-button-red {
@@ -588,18 +669,15 @@ li {
   background-color: #fb565a;
 }
 
-.features-button-red:hover,
-.catalog-item:hover {
+.features-button-red:hover {
   background-color: #e74246;
 }
 
-.features-button-red:focus,
-.catalog-item:focus {
+.features-button-red:focus {
   background-color: #e74246;
 }
 
-.features-button-red:active,
-.catalog-item:active {
+.features-button-red:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b;
   box-shadow: 0px 3px 0px 0px #c13135 inset;
@@ -670,21 +748,6 @@ li {
   margin-right: 150px;
 }
 
-.catalog-title {
-  font-size: 18px;
-  line-height: 30px;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.catalog-discription {
-  font-size: 16px;
-  line-height: 18px;
-  color: #666666;
-  margin: 0;
-  padding: 0;
-}
-
 .footer {
   display: flex;
   padding-bottom: 70px;
@@ -718,8 +781,8 @@ li {
 }
 
 .footer-item-icon:active {
-  background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
 }
 
 .main-text {
@@ -769,4 +832,31 @@ li {
 .main-table-row {
   font-size: 16px;
   line-height: 18px;
+}
+
+.adress-box {
+  box-sizing: border-box;
+  position: absolute;
+  left: 91px;
+  display: block;
+  background-color: #fff;
+  width: 319px;
+  height: 308px;
+  padding: 40px 50px;
+}
+
+.adress-title {
+
+}
+
+.adress-text {
+
+}
+
+.adress-phone {
+
+}
+
+.button-adress {
+
 }
